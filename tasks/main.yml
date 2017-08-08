@@ -13,7 +13,7 @@
     name: python-pip
     state: latest
 - pip:
-  name: docker-py
+    name: docker-py
 
 - name: Pull and run the Rancher/server contianer
   docker_container:
