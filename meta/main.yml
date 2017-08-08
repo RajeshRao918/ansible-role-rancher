@@ -1,25 +1,27 @@
 galaxy_info:
   author: Medhamsh Vuthpala
   description: Role for installing rancher-servre on which docker is already installed
-
   license: MIT
-
   min_ansible_version: 1.2
-
-   platforms:
-   - name: Fedora
-     versions:
-     - all
-     - 25
-   - name: EL
-     versions:
-     - all
-     - 1.0
-     - 7
-   - name: Ubuntu
-     versions:
-     - all
-
+  platforms:
+  - name: EL
+    versions:
+    - 7
+  - name: Fedora
+    versions:
+    - 22
+    - 23
+    - 24
+  - name: Ubuntu
+    versions:
+    - trusty
+    - wily
+    - xenial
+  - name: Debian
+    versions:
+    - jessie
+    - stretch
+    - wheezy
   galaxy_tags: 
      - rancher
      - docker
