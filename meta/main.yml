@@ -25,3 +25,6 @@ galaxy_info:
   galaxy_tags: 
      - rancher
      - docker
+  dependencies:
+     - geerlingguy.repo-epel
+     - geerlingguy.pip
