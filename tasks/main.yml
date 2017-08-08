@@ -1,19 +1,19 @@
 ---
 # tasks file for medhamsh.rancher
 - name: Enable EPEL
-    get_url:
-      url: https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-      dest: /tmp/epel.rpm
+  get_url:
+    url: https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    dest: /tmp/epel.rpm
 
 - name: Install epel
-    shell: yum -y install /tmp/epel.rpm
+  shell: yum -y install /tmp/epel.rpm
 
 - name: Install pip
-    yum:
-      name: python-pip
-      state: latest
+  yum:
+    name: python-pip
+    state: latest
 - pip:
-    name: docker-py
+  name: docker-py
 
 - name: Pull and run the Rancher/server contianer
   docker_container:
