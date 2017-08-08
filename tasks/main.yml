@@ -1,9 +1,9 @@
 ---
 # tasks file for medhamsh.rancher
 - name: Enable EPEL
-      get_url:
-        url: https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-        dest: /tmp/epel.rpm
+    get_url:
+      url: https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+      dest: /tmp/epel.rpm
 
 - name: Install epel
     shell: yum -y install /tmp/epel.rpm
